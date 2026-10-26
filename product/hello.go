@@ -5,9 +5,7 @@ import (
 )
 
 func main(){
-	sum := 1
-	for sum < 1000 {
-		sum += sum
+	for {
+		//Empty for loops will continue running indefinitely. ##DO NOT RUN THIS/
 	}
-	fmt.Println(sum)
 }
