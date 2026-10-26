@@ -118,7 +118,7 @@ Er wordt van mij verwacht dat ik een marktonderzoek  doe en een verslag aanlever
 
 Ik ben begonnen met het onderzoeken van relevante informatie via technische artikelen die ik op het internet kon vinden.
 
-Zodra ik tegen dingen aanliep zoals het vinden van vacatures voor Elixir heb ik ervoor gekozen om al vrij snel die taal als een mogelijk voor mijn keuze te laten vallen.
+Zodra ik tegen dingen aanliep zoals het vinden van vacatures voor Elixir heb ik ervoor gekozen om vrij snel die taal als een mogelijk voor mijn keuze te laten vallen. 
 
 Ik heb uiteindelijk mijn keuze gebaseerd op de vergelijking met de tijd die ik heb voor het maken van een prototype en de moeilijkheid van het leren van een hele nieuwe taal.
 
@@ -132,7 +132,7 @@ Mijn keuze is beland op Go(Lang) vooral door de lagere instapdrempel, eenvoudige
 
 Ik ben erg tevreden over mijn werkhouding en doorzettingsvermogen. 
 
-Ik moet wel eerlijk zijn over het feit dat ik het erg lastig vind om het gehele theorie-gedeelte te begrijpen op een goed niveau zonder dat ik ook maar een enkele lijn code heb geschreven in de nieuwe taal.
+Ik moet wel eerlijk zijn over het feit dat ik het erg lastig vind om het gehele theorie-gedeelte te begrijpen op een goed niveau zonder dat ik ook maar een enkele lijn code heb geschreven in GoLang. 
 
 Ik zal dan ook dit hele verslag meenemen naar de volgende fase en het gebruiken als hulpmiddel voor het maken van een prototype en verder onderzoeken van bijvoorbeeld de syntax van Go(Lang) zelf.
 
@@ -157,6 +157,8 @@ Ik wil de overstap maken van theorie en onderzoek doen naar een werkende applica
 - **Wat wil ik leren:** Omdat ik vooral ervaring heb met front-end, wil ik leren hoe Go werkt met vaste datatypes, variabelen, loops en functies.
 - **Hoe laat ik dit zien (SMART):** Ik toon dit aan door een werkende Tic-Tac-Toe CLI game te bouwen waarin het spelen soepel verloopt. Ik wil gaan toelichten in mijn code met uitleg waarom iets zo werkt.
 - **Tijdsplanning:** Dit wil ik afgerond hebben in de eerste/tweede week van het project (Ten minste de basiskennis).
+
+- Ik gebruik een tutorial van GoLang om de basis van de taal te gebruiken. [^13] (https://go.dev/tour/welcome/1)
 
 **Leerdoel 2: Snappen en toepassen van pointers**
 
@@ -211,7 +213,47 @@ Voor mijn prototype ga ik een CLI applicatie bouwen van het spel Tic Tac Toe. Di
 
 ### Planning
 
-Maak een planning met een uitgewerkte tijdslijn van de te volgen stappen om je leerdoelen te behalen. Neem hierin ook de tijd op die je nodig hebt om je prototype te maken. 
+**Week 1-2**: Setup & Syntax leren
+ - Go installeren, VS Code configureren, leren werken met `go run main.go` en `go build`.
+ - De officiële interactieve gids doen: A Tour of Go (tour.golang.org) [^13].
+ - Begrijpen wat Go anders maakt dan JS: striktere datatypes (`int, string, bool`), geen `let/const` maar `var` en `:=`.
+
+**Week 3-4**: Basis logica & structuren
+ - Oefenen met loops (for is de enige loop in GoLang) en conditionals (if/else, switch).
+ - Slices vs Arrays (hoe Go omgaat met lijsten van data).
+ - Structs ontdekken (hoe Go data structureert zonder classes).
+
+**Week 5**: Eerste mini-script & opzet
+ - Een mini-console script schrijven: vraag de gebruiker om input in de terminal en print iets uit.
+ - GitHub Projects bord inrichten voor het bijhouden van de taken.
+
+**Week 6**: Speelbord & Spelloop
+ - 3x3 grid definiëren in Go (`[3][3]string`).
+ - Functie maken die het bord netjes print in de terminal met rasterlijnen.
+ - De spelloop maken: beurt afwisselen tussen speler "X" en speler "O".
+
+**Week 7**: Winst- en gelijkspelcontrole
+ - Logica schrijven om rijen, kolommen en diagonalen te checken voor drie op een rij.
+ - Checken of het bord vol is zonder winnaar (gelijkspel).
+
+**Week 8**: Pointers & Foutafhandeling
+ - Pointers toepassen om het speelbord direct bij te werken in functies.
+ - Foutafhandeling inbouwen: zorgen dat het spel niet crasht bij verkeerde invoer (zoals letters of bezette vakjes).
+
+**Week 9**: Video & Documentatie
+ - Korte schermopname / video maken waarin de werkende CLI game wordt getoond.
+ - Code netjes maken en toelichting toevoegen met commentaar.
+ - `product/README.md` invullen met uitleg hoe het spel gestart moet worden.
+
+**Week 10**: Afronding & Inleveren
+ - Logboek compleet maken.
+ - Reflectie en eindconclusie in het verslag schrijven.
+ - Project controleren en inleveren.
+
+**Leerdoel 1** (Basis Go): Week 1 t/m 6.  
+**Leerdoel 2** (Pointers): Week 8.  
+**Leerdoel 3** (Foutafhandeling): Week 8.  
+**Leerdoel 4 & 5** (Planning en logboek): Gedurende het gehele project (Week 1 t/m 10 via GitHub Projects en dit document).
 
 ### Logboek
 
@@ -254,3 +296,5 @@ Leerdoelen behaald? Wat heb je geleerd? Wat zou je een volgende keer anders doen
 [^11][Golang Easy to Learn?](https://dev.to/adrianfinantyo/is-golang-easy-to-learn-540l) (Geraadpleegd op September 28 2026)
 
 [^12][Elixir Hard to study because there isn't much out there to learn from?](https://news.ycombinator.com/item?id=40923362) (Geraadpleegd op September 28 2026)
+
+[^13][A tour of GoLang] (https://go.dev/tour/welcome/1) (Geraadpleegd op October 8 2026)
