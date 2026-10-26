@@ -4,7 +4,13 @@ import (
 	"fmt"
 )
 
+const pi = 3.14
+
 func main(){
-	v := "560"
-	fmt.Printf("v is of type %T\n", v)
+const World = "JoJo Gio"
+fmt.Println("Hello", World)
+fmt.Println("Happy", pi, "Day")
+
+const Truth = true
+fmt.Println("Go Rules?", Truth)
 }
