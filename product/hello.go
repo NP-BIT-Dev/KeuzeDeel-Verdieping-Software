@@ -1,10 +1,11 @@
 package main
 
-import (
-	"fmt"
-	"math"
-)
+import "fmt"
+
+func add(x int, y int) int {
+	return x + y
+}
 
 func main() {
-	fmt.Println(math.pi)
+	fmt.Println(add(42, 13))
 }
