@@ -1,4 +1,4 @@
-# Project Title
+# Tic Tac Toe
 
 Map voor project.
 

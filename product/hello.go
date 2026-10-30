@@ -23,3 +23,4 @@ func main() {
 	v.Scale(10)
 	fmt.Println(v.abs())
 }
+

@@ -257,7 +257,45 @@ Voor mijn prototype ga ik een CLI applicatie bouwen van het spel Tic Tac Toe. Di
 
 ### Logboek
 
-Hou een logboek bij van de tijd die je besteed aan het maken van je prototype. Noteer hierin ook de stappen die je hebt gezet om je leerdoelen te behalen.
+De tijden zijn een schatting op basis van de tijdstippen van mijn commits (eerste t/m laatste commit van de werksessie), dus de werkelijke tijd ligt waarschijnlijk iets hoger.
+
+| Datum | Tijd | Geschatte duur | Onderwerp | Leerdoel |
+| :--- | :--- | :--- | :--- | :--- |
+| 16-09-2026 | 12:57 | - | Repository aangemaakt (initial commit). | 4, 5 |
+| 07-10-2026 | 12:51 | - | Verslag aangepast met beter geformuleerde (SMART) leerdoelen. | 4, 5 |
+| 26-10-2026 | 11:24 - 14:49 | ± 3,5 uur | A Tour of Go: packages, functies, meerdere return values, variabelen, basistypes, conversies, constanten, `for`, `if`, `switch`, `defer` en een eerste kennismaking met pointers. | 1, 2 |
+| 27-10-2026 | 09:08 - 12:43 | ± 3,5 uur | A Tour of Go: structs, arrays, slices (o.a. `make`, `append`, `range`, nil slices), een eerste Tic-Tac-Toe bord met slices en maps. | 1 |
+| 30-10-2026 | 11:03 - 11:38 | ± 0,5 uur | A Tour of Go: maps, functies als waarden, closures, Fibonacci, methods en pointer receivers. | 1, 2 |
+
+**Totaal tot nu toe:** circa 7,5 uur (week 1).
+
+#### Stappen per leerdoel
+
+**Leerdoel 1: De basis en syntax van Go**
+
+- 26-10: Door de eerste levels van A Tour of Go heen gewerkt. Ik heb gezien dat Go striktere typering heeft dan JavaScript (`var`, `:=`, expliciete conversies, `%T` om het type te tonen) en dat `for` ook als `while` en als oneindige loop dient.
+- 26-10: Controle-structuren geoefend met `if`/`else` (o.a. een wortelberekening) en `switch` (tijd en dag van de week), plus `defer` waarbij uitgestelde calls op een stack komen (last in, first out).
+- 27-10: Datastructuren geoefend: structs, arrays en slices. Voor mijn prototype is vooral de slice relevant, want daarmee kan ik het 3x3 speelbord opslaan. Een eerste Tic-Tac-Toe bord met slices is al geprint.
+- 27-10 en 30-10: Maps, functies als waarden, closures en methods behandeld.
+- Hiermee loop ik voor op de planning: slices en structs stonden pas in week 3-4 gepland.
+
+**Leerdoel 2: Pointers**
+
+- 26-10: Eerste experimenten met pointers (`&` en `*`).
+- 27-10: Gezien hoe je waardes in een struct aanpast.
+- 30-10: Methods met pointer receivers uitgeprobeerd, waarmee je de originele waarde kunt aanpassen. Dit is precies wat ik nodig heb om het speelbord bij te werken. Het toepassen in de Tic-Tac-Toe game zelf staat nog gepland voor week 8.
+
+**Leerdoel 3: Foutafhandeling**
+
+- Nog niet aan gewerkt. Ik ben alleen compilerfouten tegengekomen (bijvoorbeeld bij niet-geëxporteerde namen en een ontbrekende `return`). Het gebruik van `error` en validatie van invoer volgt in week 8.
+
+**Leerdoel 4: GitHub Projects**
+
+- Nog niet gestart. Het Kanban-bord staat gepland voor week 5, maar ik wil dit eerder oppakken. De repository en de commit-historie gebruik ik wel al als houvast voor mijn voortgang.
+
+**Leerdoel 5: Logboek**
+
+- Dit logboek is voor het eerst ingevuld op 30-10, op basis van mijn commit-historie. Voor de volgende sessies noteer ik de tijd en problemen direct na afloop.
 
 ## Prototype
 
