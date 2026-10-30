@@ -1,20 +1,19 @@
 package main
 
-import "fmt"
+import (
+	"strings"
 
-type Vertex struct{
-	Lat, Long float64
-}
+	"golang.org/x/tour/wc"
+)
 
-var m = map[string]Vertex{
-	"Bell Labs":{
-		40.68433, -74.39967,
-	},
-	"Google":{
-		37.42202, -122.08408,
-	},
+func WordCount(s string) map[string]int {
+	counts := make(map[string]int)
+	for _, word := range strings.Fields(s) {
+		counts[word]++
+	}
+	return counts
 }
 
 func main() {
-	fmt.Println(m)
+	wc.Test(WordCount)
 }
